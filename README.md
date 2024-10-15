@@ -70,6 +70,20 @@ Finalmente, se obtienen los siguientes resultados:
 ![Texto alternativo](images/Resultados.png)
 
 <h1 align="center"> Parte 2: Despliegue de Modelo en Contenedor </h1>
-## Modificación de Scripts
+
+## Modificación Scripts
+
 El script generado en la parte inicial del curso es modificado en dos archivos de tal forma que el archivo original pueda ser llamado desde otro central Nombrado Run_scripts.
 En este script se llaman los arhivos Necesarios para entrenar y predecir, asi como un archivo de salida de predicciones y otro que permita cargar un modelo.
+
+![Texto alternativo](images/Lecturadatos.png)
+
+Una vez se tienen los archivos requeridos el script ejecuta los scripts .py para entrenar (train.py) y para predecir (predict.py), los cuales usan los archivos requeridos según el caso.
+
+![Texto alternativo](images/EntrenarYPredecir.png)
+
+El Script Train.py como se ha mencionado antes, recibe el Archivo con datos para llevar a cabo el entrenamiento y tiene como salida el modelo, el cual es sobre escrito tras el entrenamiento.
+
+![Texto alternativo](images/LecturaTrain.png)
+
+![Texto alternativo](images/ModeloTrain.png)
