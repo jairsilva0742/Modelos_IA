@@ -104,8 +104,14 @@ Posteriormente, se obtiene la imagen del contenedor para la ejecución.
 
 ![Texto alternativo](images/ImagenDocker.png)
 
+## Prueba de ejecución - Entrenamiento
+
+Inicialmente se tiene una base de datos de entrenamiento, que se obtiene como ya se había mencionado. Se entrena el modelo con la base de datos, y se sobre escribe el archivo original de modelo. Para el caso de local se usa el siguiente código: docker run -v (RUTA LOCAL PROYECTO):/app/data imagen2 python /app/data/Scripts/train.py --data_file /app/data/train.csv --model_file /app/data/model.pkl --overwrite_model
+
+![Texto alternativo](images/EntrenamientoDocker.png)
+
 ## Prueba de ejecución - Predicción
 
-Inicialmente se guarda un modelo, y se lleva a cabo la predicción de afinidades usando docker. Para el caso de local se usa el siguiente código: docker run -v (RUTA LOCAL PROYECTO):/app/data imagen python /app/data/Scripts/predict.py --input_file /app/data/test_data_input.csv --model_file /app/data/model.pkl --predictions_file /app/data/test_predictions.csv
+Inicialmente se guarda un modelo, y se lleva a cabo la predicción de afinidades usando docker. Para el caso de local se usa el siguiente código: docker run -v (RUTA LOCAL PROYECTO):/app/data imagen2 python /app/data/predict.py --input_file /app/data/test_data_input.csv --model_file /app/data/model.pkl --predictions_file /app/data/test_predictions.csv
 
 ![Texto alternativo](images/PrediccionDocker.png)
