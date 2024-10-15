@@ -100,7 +100,12 @@ Inicialmente se crea el DockerFile y se configura el archivo requirements.txt. E
 
 ![Texto alternativo](images/DockerFile.png)
 
-Posteriormente, se obtiene la imagen del contenedor para su posterior ejecución.
+Posteriormente, se obtiene la imagen del contenedor para la ejecución.
 
 ![Texto alternativo](images/ImagenDocker.png)
 
+## Prueba de ejecución - Predicción
+
+Inicialmente se guarda un modelo, y se lleva a cabo la predicción de afinidades usando docker. Para el caso de local se usa el siguiente código: docker run -v (RUTA LOCAL PROYECTO):/app/data imagen python /app/data/Scripts/predict.py --input_file /app/data/test_data_input.csv --model_file /app/data/model.pkl --predictions_file /app/data/test_predictions.csv
+
+![Texto alternativo](images/PrediccionDocker.png)
