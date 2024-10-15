@@ -87,3 +87,20 @@ El Script Train.py como se ha mencionado antes, recibe el Archivo con datos para
 ![Texto alternativo](images/LecturaTrain.png)
 
 ![Texto alternativo](images/ModeloTrain.png)
+
+Para el caso de Predic.py, se recibe tanto el archivo que tiene el modelo cargado como los datos de predicción. La salida del script es un archivo .csv con las respectivas predicciones.
+
+![Texto alternativo](images/LecturaPredict.png)
+
+![Texto alternativo](images/PredictScript.png)
+
+## Creación de Docker
+
+Inicialmente se crea el DockerFile y se configura el archivo requirements.txt. El Dockerfile es usado para la creación del contenedor y el de requirements.txt tiene las dependencias necesarias para la ejecución de los scripts.
+
+![Texto alternativo](images/DockerFile.png)
+
+Posteriormente, se obtiene la imagen del contenedor para su posterior ejecución.
+
+![Texto alternativo](images/ImagenDocker.png)
+
