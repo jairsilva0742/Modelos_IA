@@ -96,13 +96,19 @@ Para el caso de Predic.py, se recibe tanto el archivo que tiene el modelo cargad
 
 ## Creación de Docker
 
-Inicialmente se crea el DockerFile y se configura el archivo requirements.txt. El Dockerfile es usado para la creación del contenedor y el de requirements.txt tiene las dependencias necesarias para la ejecución de los scripts.
+Inicialmente se crea el DockerFile y se configura el archivo requirements.txt. El Dockerfile es usado para la creación del contenedor y el de requirements.txt tiene las dependencias necesarias para la ejecución de los scripts. Adicionalmente, se instalan unas librerías necesarias para que al dependencia rdkit pueda ejecutarse.
 
-![Texto alternativo](images/DockerFile.png)
+![Texto alternativo](images/DockerFile_.png)
 
 Posteriormente, se obtiene la imagen del contenedor para la ejecución.
 
 ![Texto alternativo](images/ImagenDocker.png)
+
+## Obtención Base Datos de entrenamiento
+
+En la fase 1 del Proyecto se usaba una base de datos con una cantidad enorme de datos, lo cual dificultaba su posible subida a Github. Para poder llevar a cabo el entrenamiento se obtiene una nueva base de datos con 900.000 datos, para lo cual se obtiene un archico .csv que obtiene dichos datos aleatorios de la base original.
+
+![Texto alternativo](images/ObtencionBase.png)
 
 ## Prueba de ejecución - Entrenamiento
 
