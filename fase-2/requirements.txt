@@ -1,0 +1,7 @@
+rdkit-pypi
+scikit-learn
+loguru
+duckdb
+pandas
+argparse
+numpy
