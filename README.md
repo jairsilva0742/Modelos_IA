@@ -68,3 +68,8 @@ Luego se prueba el modelo, usando el archivo test.csv y el modelo ya obtenido. L
 Finalmente, se obtienen los siguientes resultados:
 
 ![Texto alternativo](images/Resultados.png)
+
+<h1 align="center"> Parte 2: Despliegue de Modelo en Contenedor </h1>
+## Modificación de Scripts
+El script generado en la parte inicial del curso es modificado en dos archivos de tal forma que el archivo original pueda ser llamado desde otro central Nombrado Run_scripts.
+En este script se llaman los arhivos Necesarios para entrenar y predecir, asi como un archivo de salida de predicciones y otro que permita cargar un modelo.
